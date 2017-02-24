@@ -12,7 +12,6 @@ import javax.microedition.khronos.opengles.GL10;
 
 public class MyGLRenderer implements GLSurfaceView.Renderer {
 
-
     //Called once to set up the view's OpenGL ES environment.
     @Override
     public void onSurfaceCreated(GL10 gl, EGLConfig config) {
@@ -25,7 +24,6 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         GLES20.glViewport(0, 0, width, height);
 
     }
-
     @Override
     public void onDrawFrame(GL10 gl) {
         // Redraw background color
