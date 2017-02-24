@@ -12,13 +12,11 @@ import javax.microedition.khronos.opengles.GL10;
 
 public class MyGLRenderer implements GLSurfaceView.Renderer {
 
-    private Triangle triangle;
 
     //Called once to set up the view's OpenGL ES environment.
     @Override
     public void onSurfaceCreated(GL10 gl, EGLConfig config) {
         GLES20.glClearColor(0.0f, 0.0f, 51.0f, 1.0f); // Set the background frame color
-        triangle = new Triangle();
 
     }
     //Called for each redraw of the view.
